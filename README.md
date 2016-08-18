@@ -1,2 +1,2 @@
 # topNBAsalaries
-Analytics of the highest paid NBA players' salaries vs performance
+Analytics of the highest paid NBA players' salaries vs performance using R
