@@ -24,7 +24,7 @@ summary(salarystats)
 #Lets Delete The Unncessary Column. We'll Use head() to scope them out
 head(salarystats)
 
-#remove League(Lg) and Team(Tm)
+#remove the columns League(Lg) and Team(Tm). Both are unneccesary
 salarystats$Tm <- NULL
 salarystats$Lg <- NULL
 
@@ -32,7 +32,7 @@ salarystats$Lg <- NULL
 ncol(salarystats) # 29 columns
 salarystats[salarystats=="CarmeloAnthony"]
 
-#Rename cOlumns
+#Rename columns
 colnames(salarystats) <-c("Season","Player", "Salary","Position","Games","GamesStarted","MinutesPlayed","FieldGoal","FieldGoalAttempts","FieldGoalPercent","3-PointFG",
                           "3-PointFGAttempts","3-PointPercent","2-PointFG","2-PointFGAttempts","2-PointFGPercent","EffectiveFG","FreeThrows","FreeThrowAttempts","FreeThrowPercent",
                           "OffensiveRebounds","DefensiveRebounds","TotalRebounds","Assists","Steals","Blocks","Turnovers","PersonalFouls","Points")
