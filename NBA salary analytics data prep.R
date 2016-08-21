@@ -2,13 +2,11 @@ library(ggplot2)
 library(dplyr)
 
 
-
 setwd("C:\\Users\\Mommy & Daddy\\Desktop\\Data Science Projects\\20160818 NBA Salary Data\\2. Prepared Data")
 getwd()
 rm(stats) 
 salarystats<- read.csv("nba_top_salary_stats.csv",row.names = NULL)
 salarystats
-
 
 
 #verify that all columns and rows have been imported 
